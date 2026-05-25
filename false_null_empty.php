@@ -14,6 +14,7 @@
 
             $funcionario1 = null;
             $funcionario2 = '';
+            $funcionario3 = false;
 
             //valores null
             if(is_null($funcionario1)){
@@ -26,13 +27,24 @@
                     echo 'O funcionário 2 é nulo'; }
                 else{
                     echo 'O funcionário 2 não é nulo';  }
+             echo '<hr>';    
+                if(is_null($funcionario3)){
+                    echo 'O funcionário 3 é nulo'; }
+                else{
+                    echo 'O funcionário 3 não é nulo';  }
 
                 echo '<hr>';
                             if(empty($funcionario1)){
                 echo 'O funcionário 1 é vazio';
             }else{
                 echo 'O funcionário 1 não é vazio';  }
-                echo '<hr>';    
+                    
+            echo '<hr>';
+                            if(empty($funcionario3)){
+                echo 'O funcionário 3 é vazio';
+            }else{
+                echo 'O funcionário 3   não é vazio';  }
+                echo '<hr>';
                 if(empty($funcionario2)){
                     echo 'O funcionário 2 é vazio'; }
                 else{
