@@ -15,9 +15,13 @@
             array('Titulo' => 'Titulo noticia 4', 'Conteudo' => 'Conteudo noticia 4')
         );
 
-        $idx = 0;
+        echo '<pre>';
+        print_r($registros);
+        echo '<prev/>';
+
+    
         echo 'O array possui: '. count($registros) . ' registros';
-        echo '<hr/>';
+        echo '<hr/>';/*
         while($idx < count($registros)){
             echo '<h3>'.$registros[$idx]['Titulo'].'</h3>';
             echo '<p>'.$registros[$idx]['Conteudo'].'</p>';
@@ -36,6 +40,12 @@
             $idx++;
         
         }while ($idx < count($registros));
+*/
+        for($idx = 0; $idx < count($registros); $idx++){
+            echo '<h3>'.$registros[$idx]['Titulo'].'</h3>';
+            echo '<p>'.$registros[$idx]['Conteudo'].'</p>';
+            echo '<hr/>';
+        }
 
         
 
