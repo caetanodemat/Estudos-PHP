@@ -1,6 +1,6 @@
 <?php
     session_start();
-
+    $_SESSION['x'] = 'Oi, sou um valor de sessão';
     print_r($_SESSION);
     echo '<hr />';
     $usuario_autenticado = false;
